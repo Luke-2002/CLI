@@ -1,0 +1,8 @@
+version: '3'
+services:
+  your-cli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: your-cli-image
+    container_name: your-cli-container
