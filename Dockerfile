@@ -1,7 +1,11 @@
-# Use Python 3.10 on Alpine as the base image
-FROM python:3.10-alpine
+# Start with the Alpine base image
+FROM alpine
 
-# Set the working directory in the container
+# Install Python and pip
+RUN apk add --no-cache python3 python3-dev py3-pip
+
+# Copy the application files into the container
+COPY . /app
 WORKDIR /app
 
 # Copy the requirements file into the container
