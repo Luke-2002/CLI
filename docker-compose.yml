@@ -4,5 +4,5 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: your-cli-image
-    container_name: your-cli-container
+    image: luke2002/cli
+    container_name: g9cli
