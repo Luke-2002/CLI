@@ -15,10 +15,10 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the CLI script into the container
-COPY cli.py /app/cli
+COPY cli.py /app/cli.py
 
 # Make the CLI script executable
-RUN chmod +x /app/cli
+RUN chmod +x /app/cli.py
 
 # Set the entry point to the CLI script
 ENTRYPOINT ["python3", "cli.py"]
