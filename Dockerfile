@@ -21,6 +21,4 @@ COPY cli.py /app/cli
 RUN chmod +x /app/cli
 
 # Set the entry point to the CLI script
-ENTRYPOINT ["/app/cli"]
-
-CMD ["python3", "cli.py"]
+ENTRYPOINT ["python3", "cli.py"]
